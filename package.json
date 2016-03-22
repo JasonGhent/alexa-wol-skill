@@ -1,0 +1,24 @@
+{
+  "name": "alexa-wol-skill",
+  "version": "1.0.0",
+  "description": "Alexa skill to be used in conjunction with alexa-wol-proxy",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run test && npm run zip-and-upload",
+    "test": "npm run linter && $(npm bin)/mocha tests",
+    "linter": "$(npm bin)/eslint lib/src",
+    "zip-and-upload": "AWS_PROFILE=personal ./opt/zip-and-upload-to-lambda.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^3.9.3",
+    "adm-zip": "^0.4.7",
+    "aws-sdk": "^2.1.36"
+  },
+  "devDependencies": {
+    "eslint": "^2.4.0",
+    "eslint-config-defaults": "^9.0.0",
+    "mocha": "^2.4.5"
+  }
+}

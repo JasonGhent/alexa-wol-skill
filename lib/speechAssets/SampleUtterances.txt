@@ -1,0 +1,3 @@
+GetNewFactIntent a fact
+
+HelpIntent help

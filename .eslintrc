@@ -1,0 +1,8 @@
+---
+"extends":
+  - "defaults/configurations/node-runtime"
+
+"rules":
+  "no-arrow-condition": 0
+  "space-after-keywords": 0
+  "space-return-throw-case": 0
